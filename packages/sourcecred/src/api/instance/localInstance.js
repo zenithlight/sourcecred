@@ -27,6 +27,8 @@ import {type CredAccountData} from "../../core/ledger/credAccounts";
 import {WritableDataStorage} from "../../core/storage";
 import {type PersonalAttributionsConfig} from "../config/personalAttributionsConfig";
 import type {GrainIntegrationMultiResult} from "../main/grain";
+import sortBy from "../../util/sortBy";
+import {sum} from "d3-array";
 
 const DEPENDENCIES_PATH: $ReadOnlyArray<string> = [
   "config",
@@ -39,6 +41,7 @@ const PERSONAL_ATTRIBUTIONS_PATH: $ReadOnlyArray<string> = [
 ];
 const INSTANCE_CONFIG_PATH: $ReadOnlyArray<string> = ["sourcecred.json"];
 const CREDGRAPH_PATH: $ReadOnlyArray<string> = ["output", "credGraph"];
+const CREDSCORE_PATH: $ReadOnlyArray<string> = ["output", "credScores"];
 const CREDGRAINVIEW_PATH: $ReadOnlyArray<string> = ["output", "credGrainView"];
 const GRAPHS_PATH: $ReadOnlyArray<string> = ["graph"];
 const LEDGER_PATH: $ReadOnlyArray<string> = ["data", "ledger.json"];
@@ -111,6 +114,7 @@ export class LocalInstance extends ReadInstance implements Instance {
   ): Promise<void> {
     await Promise.all([
       this.writeLedger(credrankOutput.ledger),
+      this.writeCredScores(credrankOutput.credGraph),
       this.writeCredGraph(credrankOutput.credGraph, shouldZip),
       this.writeCredGrainView(credrankOutput.credGrainView, shouldZip),
       this.writeDependenciesConfig(credrankOutput.dependencies),
@@ -184,6 +188,21 @@ export class LocalInstance extends ReadInstance implements Instance {
         return cacheDir;
       },
     };
+  }
+
+  async writeCredScores(
+      credGraph: CredGraph
+  ): Promise<void> {
+    const credParticipants = Array.from(credGraph.participants());
+    const results = {}
+    credParticipants.forEach(participant => {
+      results[participant.description] = participant.cred
+    })
+    const cgJson = JSON.stringify(results);
+    const outputPath =
+        pathJoin(...CREDSCORE_PATH) + (JSON_SUFFIX);
+    const storage = this._writableStorage;
+    return storage.set(outputPath, encode(cgJson));
   }
 
   async writeCredGraph(
