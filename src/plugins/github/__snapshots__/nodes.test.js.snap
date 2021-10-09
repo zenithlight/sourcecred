@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugins/github/nodes snapshots as expected: commit 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "COMMIT",
+    "12345",
+  ],
+  "structured": Object {
+    "id": "12345",
+    "type": "COMMIT",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: issue 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+  ],
+  "structured": Object {
+    "number": "2",
+    "repo": Object {
+      "name": "example-github",
+      "owner": "sourcecred",
+      "type": "REPO",
+    },
+    "type": "ISSUE",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: issueComment 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+    "373768703",
+  ],
+  "structured": Object {
+    "id": "373768703",
+    "parent": Object {
+      "number": "2",
+      "repo": Object {
+        "name": "example-github",
+        "owner": "sourcecred",
+        "type": "REPO",
+      },
+      "type": "ISSUE",
+    },
+    "type": "COMMENT",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: pull 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "structured": Object {
+    "number": "5",
+    "repo": Object {
+      "name": "example-github",
+      "owner": "sourcecred",
+      "type": "REPO",
+    },
+    "type": "PULL",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: pullComment 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+    "396430464",
+  ],
+  "structured": Object {
+    "id": "396430464",
+    "parent": Object {
+      "number": "5",
+      "repo": Object {
+        "name": "example-github",
+        "owner": "sourcecred",
+        "type": "REPO",
+      },
+      "type": "PULL",
+    },
+    "type": "COMMENT",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: repo 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "REPO",
+    "sourcecred",
+    "example-github",
+  ],
+  "structured": Object {
+    "name": "example-github",
+    "owner": "sourcecred",
+    "type": "REPO",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: review 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "REVIEW",
+    "sourcecred",
+    "example-github",
+    "5",
+    "100313899",
+  ],
+  "structured": Object {
+    "id": "100313899",
+    "pull": Object {
+      "number": "5",
+      "repo": Object {
+        "name": "example-github",
+        "owner": "sourcecred",
+        "type": "REPO",
+      },
+      "type": "PULL",
+    },
+    "type": "REVIEW",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: reviewComment 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "REVIEW",
+    "sourcecred",
+    "example-github",
+    "5",
+    "100313899",
+    "171460198",
+  ],
+  "structured": Object {
+    "id": "171460198",
+    "parent": Object {
+      "id": "100313899",
+      "pull": Object {
+        "number": "5",
+        "repo": Object {
+          "name": "example-github",
+          "owner": "sourcecred",
+          "type": "REPO",
+        },
+        "type": "PULL",
+      },
+      "type": "REVIEW",
+    },
+    "type": "COMMENT",
+  },
+}
+`;
+
+exports[`plugins/github/nodes snapshots as expected: user 1`] = `
+Object {
+  "address": Array [
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+  ],
+  "structured": Object {
+    "login": "decentralion",
+    "subtype": "USER",
+    "type": "USERLIKE",
+  },
+}
+`;

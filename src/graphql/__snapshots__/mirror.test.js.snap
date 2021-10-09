@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`graphql/mirror Mirror _queryConnection snapshot test for actual GitHub queries 1`] = `
+"query TestQuery {
+  objectInitial: node(id: \\"MDEwOlJlcG9zaXRvcnkxMjMyNTUwMDY=\\") {
+    ... on Repository {
+      issues(first: 2) {
+        totalCount
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        nodes {
+          __typename
+          id
+        }
+      }
+    }
+  }
+  objectUpdate: node(id: \\"MDEwOlJlcG9zaXRvcnkxMjMyNTUwMDY=\\") {
+    ... on Repository {
+      issues(first: 2 after: \\"Y3Vyc29yOnYyOpHOEe_nRA==\\") {
+        totalCount
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        nodes {
+          __typename
+          id
+        }
+      }
+    }
+  }
+  objectExpectedIds: node(id: \\"MDEwOlJlcG9zaXRvcnkxMjMyNTUwMDY=\\") {
+    ... on Repository {
+      issues(first: 4) {
+        nodes {
+          id
+        }
+      }
+    }
+  }
+  unionInitial: node(id: \\"MDU6SXNzdWUzMDA5MzQ4MTg=\\") {
+    ... on Issue {
+      timeline(first: 1) {
+        totalCount
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        nodes {
+          __typename
+          ... on Commit {
+            id
+          }
+          ... on IssueComment {
+            id
+          }
+          ... on CrossReferencedEvent {
+            id
+          }
+          ... on ClosedEvent {
+            id
+          }
+          ... on ReopenedEvent {
+            id
+          }
+          ... on SubscribedEvent {
+            id
+          }
+          ... on UnsubscribedEvent {
+            id
+          }
+          ... on ReferencedEvent {
+            id
+          }
+          ... on AssignedEvent {
+            id
+          }
+          ... on UnassignedEvent {
+            id
+          }
+          ... on LabeledEvent {
+            id
+          }
+          ... on UnlabeledEvent {
+            id
+          }
+          ... on MilestonedEvent {
+            id
+          }
+          ... on DemilestonedEvent {
+            id
+          }
+          ... on RenamedTitleEvent {
+            id
+          }
+          ... on LockedEvent {
+            id
+          }
+          ... on UnlockedEvent {
+            id
+          }
+        }
+      }
+    }
+  }
+  unionUpdate: node(id: \\"MDU6SXNzdWUzMDA5MzQ4MTg=\\") {
+    ... on Issue {
+      timeline(first: 1 after: \\"MQ==\\") {
+        totalCount
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        nodes {
+          __typename
+          ... on Commit {
+            id
+          }
+          ... on IssueComment {
+            id
+          }
+          ... on CrossReferencedEvent {
+            id
+          }
+          ... on ClosedEvent {
+            id
+          }
+          ... on ReopenedEvent {
+            id
+          }
+          ... on SubscribedEvent {
+            id
+          }
+          ... on UnsubscribedEvent {
+            id
+          }
+          ... on ReferencedEvent {
+            id
+          }
+          ... on AssignedEvent {
+            id
+          }
+          ... on UnassignedEvent {
+            id
+          }
+          ... on LabeledEvent {
+            id
+          }
+          ... on UnlabeledEvent {
+            id
+          }
+          ... on MilestonedEvent {
+            id
+          }
+          ... on DemilestonedEvent {
+            id
+          }
+          ... on RenamedTitleEvent {
+            id
+          }
+          ... on LockedEvent {
+            id
+          }
+          ... on UnlockedEvent {
+            id
+          }
+        }
+      }
+    }
+  }
+  unionExpectedIds: node(id: \\"MDU6SXNzdWUzMDA5MzQ4MTg=\\") {
+    ... on Issue {
+      timeline(first: 2) {
+        nodes {
+          ... on Commit {
+            id
+          }
+          ... on IssueComment {
+            id
+          }
+          ... on CrossReferencedEvent {
+            id
+          }
+          ... on ClosedEvent {
+            id
+          }
+          ... on ReopenedEvent {
+            id
+          }
+          ... on SubscribedEvent {
+            id
+          }
+          ... on UnsubscribedEvent {
+            id
+          }
+          ... on ReferencedEvent {
+            id
+          }
+          ... on AssignedEvent {
+            id
+          }
+          ... on UnassignedEvent {
+            id
+          }
+          ... on LabeledEvent {
+            id
+          }
+          ... on UnlabeledEvent {
+            id
+          }
+          ... on MilestonedEvent {
+            id
+          }
+          ... on DemilestonedEvent {
+            id
+          }
+          ... on RenamedTitleEvent {
+            id
+          }
+          ... on LockedEvent {
+            id
+          }
+          ... on UnlockedEvent {
+            id
+          }
+        }
+      }
+    }
+  }
+}"
+`;
+
+exports[`graphql/mirror Mirror _updateOwnData snapshot test for actual GitHub queries 1`] = `
+"query TestUpdate {
+  issue: node(id: \\"MDU6SXNzdWUzNDg1NDA0NjE=\\") {
+    ... on Issue {
+      __typename
+      id
+      url
+      author {
+        __typename
+        ... on User {
+          id
+        }
+        ... on Bot {
+          id
+        }
+        ... on Organization {
+          id
+        }
+      }
+      repository {
+        __typename
+        id
+      }
+      title
+    }
+  }
+  reaction: node(id: \\"MDg6UmVhY3Rpb24yOTUzNDM4Mw==\\") {
+    ... on Reaction {
+      __typename
+      id
+      content
+      user {
+        id
+      }
+    }
+  }
+  commit: node(id: \\"MDY6Q29tbWl0MTIwMTQ1NTcwOjU1OTUwZjUzNTQ1NTEwOWJhNDhhYmYyYjk3N2U2NmFhMWNjMzVlNjk=\\") {
+    ... on Commit {
+      __typename
+      id
+      oid
+      author {
+        date
+        user {
+          id
+        }
+      }
+    }
+  }
+}"
+`;

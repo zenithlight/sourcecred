@@ -1,0 +1,322 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugins/github/edges createEdge works for "authors" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "AUTHORS",
+    "5",
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+    "6",
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "hasParent" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "HAS_PARENT",
+    "9",
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "REVIEW",
+    "sourcecred",
+    "example-github",
+    "5",
+    "100313899",
+    "171460198",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "REVIEW",
+    "sourcecred",
+    "example-github",
+    "5",
+    "100313899",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "REVIEW",
+    "sourcecred",
+    "example-github",
+    "5",
+    "100313899",
+    "171460198",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "mergedAs" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "MERGED_AS",
+    "6",
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "COMMIT",
+    "123",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "reactsHeart" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "REACTS",
+    "HEART",
+    "5",
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+    "6",
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "reactsHooray" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "REACTS",
+    "HOORAY",
+    "5",
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+    "8",
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+    "373768703",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+    "373768703",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "reactsRocket" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "REACTS",
+    "ROCKET",
+    "5",
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+    "8",
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+    "396430464",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "COMMENT",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+    "396430464",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "reactsThumbsUp" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "REACTS",
+    "THUMBS_UP",
+    "5",
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+    "6",
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "USERLIKE",
+    "USER",
+    "decentralion",
+  ],
+  "timestampMs": 102,
+}
+`;
+
+exports[`plugins/github/edges createEdge works for "references" 1`] = `
+Object {
+  "addressParts": Array [
+    "sourcecred",
+    "github",
+    "REFERENCES",
+    "6",
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+    "6",
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "dstParts": Array [
+    "sourcecred",
+    "github",
+    "PULL",
+    "sourcecred",
+    "example-github",
+    "5",
+  ],
+  "srcParts": Array [
+    "sourcecred",
+    "github",
+    "ISSUE",
+    "sourcecred",
+    "example-github",
+    "2",
+  ],
+  "timestampMs": 102,
+}
+`;

@@ -1,0 +1,666 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`plugins/discourse/fetch snapshot testing loads a particular topic from snapshot 1`] = `
+Object {
+  "posts": Array [
+    Object {
+      "authorUsername": "d11",
+      "cooked": "<p>This is a test post.</p>
+<p>EDIT: This test post was edited on October 24, 2019.</p>",
+      "id": 14,
+      "indexWithinTopic": 1,
+      "replyToPostIndex": null,
+      "timestampMs": 1564744349476,
+      "topicId": 11,
+      "trustLevel": 4,
+    },
+    Object {
+      "authorUsername": "dl-proto",
+      "cooked": "<p>Ah, an excellent post. I will like it and reply.</p>",
+      "id": 16,
+      "indexWithinTopic": 2,
+      "replyToPostIndex": null,
+      "timestampMs": 1564744496285,
+      "topicId": 11,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "d11",
+      "cooked": "<p>Adding another post, after having deleted a whole thread.</p>",
+      "id": 22,
+      "indexWithinTopic": 3,
+      "replyToPostIndex": null,
+      "timestampMs": 1564951839667,
+      "topicId": 11,
+      "trustLevel": 4,
+    },
+  ],
+  "topic": Object {
+    "authorUsername": "d11",
+    "categoryId": "1",
+    "id": 11,
+    "tags": Array [],
+    "timestampMs": 1564744349408,
+    "title": "My First Test Post",
+  },
+}
+`;
+
+exports[`plugins/discourse/fetch snapshot testing loads a topic with pagination from snapshot 1`] = `
+Object {
+  "posts": Array [
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>This topic will have 2 pages.<br>
+Needing at least &gt; 20 posts.</p>",
+      "id": 34,
+      "indexWithinTopic": 1,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839733554,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#2</span>
+</h2>",
+      "id": 35,
+      "indexWithinTopic": 2,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839810871,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#3</span>
+</h2>",
+      "id": 36,
+      "indexWithinTopic": 3,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839814701,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#4</span>
+</h2>",
+      "id": 37,
+      "indexWithinTopic": 4,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839818330,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#5</span>
+</h2>",
+      "id": 38,
+      "indexWithinTopic": 5,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839821821,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#6</span>
+</h2>",
+      "id": 39,
+      "indexWithinTopic": 6,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839825601,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#7</span>
+</h2>",
+      "id": 40,
+      "indexWithinTopic": 7,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839828825,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#8</span>
+</h2>",
+      "id": 41,
+      "indexWithinTopic": 8,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839832023,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#9</span>
+</h2>",
+      "id": 42,
+      "indexWithinTopic": 9,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839835298,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#10</span>
+</h2>",
+      "id": 43,
+      "indexWithinTopic": 10,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839840261,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#11</span>
+</h2>",
+      "id": 44,
+      "indexWithinTopic": 11,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839843418,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#12</span>
+</h2>",
+      "id": 45,
+      "indexWithinTopic": 12,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839846537,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#13</span>
+</h2>",
+      "id": 46,
+      "indexWithinTopic": 13,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839849459,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#14</span>
+</h2>",
+      "id": 47,
+      "indexWithinTopic": 14,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839852186,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#15</span>
+</h2>",
+      "id": 48,
+      "indexWithinTopic": 15,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839855068,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#16</span>
+</h2>",
+      "id": 49,
+      "indexWithinTopic": 16,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839857787,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#17</span>
+</h2>",
+      "id": 50,
+      "indexWithinTopic": 17,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839860730,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#18</span>
+</h2>",
+      "id": 51,
+      "indexWithinTopic": 18,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839863576,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#19</span>
+</h2>",
+      "id": 52,
+      "indexWithinTopic": 19,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839866548,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#20</span>
+</h2>",
+      "id": 53,
+      "indexWithinTopic": 20,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839869555,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+    Object {
+      "authorUsername": "beanow.sc-test",
+      "cooked": "<p>The quick brown fox jumps over the lazy dog.</p>
+<h2>Post <span class=\\"hashtag\\">#21</span>
+</h2>",
+      "id": 54,
+      "indexWithinTopic": 21,
+      "replyToPostIndex": null,
+      "timestampMs": 1573839872244,
+      "topicId": 26,
+      "trustLevel": 1,
+    },
+  ],
+  "topic": Object {
+    "authorUsername": "beanow.sc-test",
+    "categoryId": "6",
+    "id": 26,
+    "tags": Array [],
+    "timestampMs": 1573839733506,
+    "title": "Big Filler Topic 1",
+  },
+}
+`;
+
+exports[`plugins/discourse/fetch snapshot testing loads topic IDs that are category definition topics 1`] = `
+Set {
+  24,
+  1,
+  25,
+}
+`;
+
+exports[`plugins/discourse/fetch snapshot testing loads topics ordered by bumped_at since a given timestamp 1`] = `
+Array [
+  Object {
+    "bumpedMs": 1554938179399,
+    "categoryId": "1",
+    "id": 7,
+    "tags": Array [],
+    "timestampMs": 1554236412879,
+    "title": "Welcome to Discourse",
+  },
+  Object {
+    "bumpedMs": 1609910999621,
+    "categoryId": "5",
+    "id": 37,
+    "tags": Array [
+      "a-special-topic",
+      "filler-topic",
+    ],
+    "timestampMs": 1573840450242,
+    "title": "Filler Topic #11",
+  },
+  Object {
+    "bumpedMs": 1609910679216,
+    "categoryId": "1",
+    "id": 58,
+    "tags": Array [],
+    "timestampMs": 1609910679121,
+    "title": "Topic with a Tag",
+  },
+  Object {
+    "bumpedMs": 1573840598964,
+    "categoryId": "5",
+    "id": 57,
+    "tags": Array [],
+    "timestampMs": 1573840598902,
+    "title": "Filler Topic #31",
+  },
+  Object {
+    "bumpedMs": 1573840590166,
+    "categoryId": "5",
+    "id": 56,
+    "tags": Array [],
+    "timestampMs": 1573840590101,
+    "title": "Filler Topic #30",
+  },
+  Object {
+    "bumpedMs": 1573840580352,
+    "categoryId": "5",
+    "id": 55,
+    "tags": Array [],
+    "timestampMs": 1573840580295,
+    "title": "Filler Topic #29",
+  },
+  Object {
+    "bumpedMs": 1573840574181,
+    "categoryId": "5",
+    "id": 54,
+    "tags": Array [],
+    "timestampMs": 1573840574124,
+    "title": "Filler Topic #28",
+  },
+  Object {
+    "bumpedMs": 1573840567788,
+    "categoryId": "5",
+    "id": 53,
+    "tags": Array [],
+    "timestampMs": 1573840567727,
+    "title": "Filler Topic #27",
+  },
+  Object {
+    "bumpedMs": 1573840562068,
+    "categoryId": "5",
+    "id": 52,
+    "tags": Array [],
+    "timestampMs": 1573840562010,
+    "title": "Filler Topic #26",
+  },
+  Object {
+    "bumpedMs": 1573840551728,
+    "categoryId": "5",
+    "id": 51,
+    "tags": Array [],
+    "timestampMs": 1573840551656,
+    "title": "Filler Topic #25",
+  },
+  Object {
+    "bumpedMs": 1573840544868,
+    "categoryId": "5",
+    "id": 50,
+    "tags": Array [],
+    "timestampMs": 1573840544797,
+    "title": "Filler Topic #24",
+  },
+  Object {
+    "bumpedMs": 1573840538301,
+    "categoryId": "5",
+    "id": 49,
+    "tags": Array [],
+    "timestampMs": 1573840538246,
+    "title": "Filler Topic #23",
+  },
+  Object {
+    "bumpedMs": 1573840532029,
+    "categoryId": "5",
+    "id": 48,
+    "tags": Array [],
+    "timestampMs": 1573840531935,
+    "title": "Filler Topic #22",
+  },
+  Object {
+    "bumpedMs": 1573840525734,
+    "categoryId": "5",
+    "id": 47,
+    "tags": Array [],
+    "timestampMs": 1573840525656,
+    "title": "Filler Topic #21",
+  },
+  Object {
+    "bumpedMs": 1573840516283,
+    "categoryId": "5",
+    "id": 46,
+    "tags": Array [],
+    "timestampMs": 1573840516235,
+    "title": "Filler Topic #20",
+  },
+  Object {
+    "bumpedMs": 1573840509355,
+    "categoryId": "5",
+    "id": 45,
+    "tags": Array [],
+    "timestampMs": 1573840509297,
+    "title": "Filler Topic #19",
+  },
+  Object {
+    "bumpedMs": 1573840503032,
+    "categoryId": "5",
+    "id": 44,
+    "tags": Array [],
+    "timestampMs": 1573840502978,
+    "title": "Filler Topic #18",
+  },
+  Object {
+    "bumpedMs": 1573840496395,
+    "categoryId": "5",
+    "id": 43,
+    "tags": Array [],
+    "timestampMs": 1573840496337,
+    "title": "Filler Topic #17",
+  },
+  Object {
+    "bumpedMs": 1573840486299,
+    "categoryId": "5",
+    "id": 42,
+    "tags": Array [],
+    "timestampMs": 1573840486242,
+    "title": "Filler Topic #16",
+  },
+  Object {
+    "bumpedMs": 1573840480604,
+    "categoryId": "5",
+    "id": 41,
+    "tags": Array [],
+    "timestampMs": 1573840480538,
+    "title": "Filler Topic #15",
+  },
+  Object {
+    "bumpedMs": 1573840474450,
+    "categoryId": "5",
+    "id": 40,
+    "tags": Array [],
+    "timestampMs": 1573840474386,
+    "title": "Filler Topic #14",
+  },
+  Object {
+    "bumpedMs": 1573840469806,
+    "categoryId": "5",
+    "id": 39,
+    "tags": Array [],
+    "timestampMs": 1573840469748,
+    "title": "Filler Topic #13",
+  },
+  Object {
+    "bumpedMs": 1573840464212,
+    "categoryId": "5",
+    "id": 38,
+    "tags": Array [],
+    "timestampMs": 1573840464152,
+    "title": "Filler Topic #12",
+  },
+  Object {
+    "bumpedMs": 1573840428729,
+    "categoryId": "5",
+    "id": 36,
+    "tags": Array [],
+    "timestampMs": 1573840428677,
+    "title": "Filler Topic #10",
+  },
+  Object {
+    "bumpedMs": 1573840372677,
+    "categoryId": "5",
+    "id": 35,
+    "tags": Array [],
+    "timestampMs": 1573840372613,
+    "title": "Filler Topic #9",
+  },
+  Object {
+    "bumpedMs": 1573840366708,
+    "categoryId": "5",
+    "id": 34,
+    "tags": Array [],
+    "timestampMs": 1573840366625,
+    "title": "Filler Topic #8",
+  },
+  Object {
+    "bumpedMs": 1573840360335,
+    "categoryId": "5",
+    "id": 33,
+    "tags": Array [],
+    "timestampMs": 1573840360253,
+    "title": "Filler Topic #7",
+  },
+  Object {
+    "bumpedMs": 1573840354669,
+    "categoryId": "5",
+    "id": 32,
+    "tags": Array [],
+    "timestampMs": 1573840354599,
+    "title": "Filler Topic #6",
+  },
+  Object {
+    "bumpedMs": 1573840348410,
+    "categoryId": "5",
+    "id": 31,
+    "tags": Array [],
+    "timestampMs": 1573840348348,
+    "title": "Filler Topic #5",
+  },
+  Object {
+    "bumpedMs": 1573840335123,
+    "categoryId": "5",
+    "id": 30,
+    "tags": Array [],
+    "timestampMs": 1573840335060,
+    "title": "Filler Topic #4",
+  },
+  Object {
+    "bumpedMs": 1573840310550,
+    "categoryId": "5",
+    "id": 29,
+    "tags": Array [],
+    "timestampMs": 1573840310488,
+    "title": "Filler Topic #3",
+  },
+  Object {
+    "bumpedMs": 1573840233231,
+    "categoryId": "5",
+    "id": 28,
+    "tags": Array [],
+    "timestampMs": 1573840233177,
+    "title": "Filler Topic #2",
+  },
+  Object {
+    "bumpedMs": 1573840159198,
+    "categoryId": "5",
+    "id": 27,
+    "tags": Array [],
+    "timestampMs": 1573840159140,
+    "title": "Filler Topic #1",
+  },
+  Object {
+    "bumpedMs": 1573839872244,
+    "categoryId": "6",
+    "id": 26,
+    "tags": Array [],
+    "timestampMs": 1573839733506,
+    "title": "Big Filler Topic 1",
+  },
+  Object {
+    "bumpedMs": 1571855191281,
+    "categoryId": "1",
+    "id": 21,
+    "tags": Array [],
+    "timestampMs": 1571855191140,
+    "title": "A Post With References",
+  },
+  Object {
+    "bumpedMs": 1570420159922,
+    "categoryId": "1",
+    "id": 20,
+    "tags": Array [],
+    "timestampMs": 1570420159868,
+    "title": "123 a post with numbers in slug",
+  },
+  Object {
+    "bumpedMs": 1570049836311,
+    "categoryId": "1",
+    "id": 19,
+    "tags": Array [],
+    "timestampMs": 1570049491690,
+    "title": "This post will be a wiki",
+  },
+  Object {
+    "bumpedMs": 1570049410625,
+    "categoryId": "1",
+    "id": 18,
+    "tags": Array [],
+    "timestampMs": 1570049410568,
+    "title": "Test Poll Please Ignore",
+  },
+  Object {
+    "bumpedMs": 1564951839667,
+    "categoryId": "1",
+    "id": 11,
+    "tags": Array [],
+    "timestampMs": 1564744349408,
+    "title": "My First Test Post",
+  },
+  Object {
+    "bumpedMs": 1564744632755,
+    "categoryId": "1",
+    "id": 13,
+    "tags": Array [],
+    "timestampMs": 1564744553843,
+    "title": "A Thread With Links",
+  },
+]
+`;
+
+exports[`plugins/discourse/fetch snapshot testing loads user data from snapshot dl-proto 1`] = `
+Object {
+  "trustLevel": 1,
+  "username": "dl-proto",
+}
+`;
+
+exports[`plugins/discourse/fetch snapshot testing loads user likes from snapshot 1`] = `
+Array [
+  Object {
+    "postId": 14,
+    "timestampMs": 1564744498189,
+    "username": "dl-proto",
+  },
+]
+`;

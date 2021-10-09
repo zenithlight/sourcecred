@@ -1,0 +1,8 @@
+/bin
+/build
+/build2
+/coverage
+/dist
+/flow-typed
+/sharness
+/.github/ISSUE_TEMPLATE
